@@ -3,7 +3,7 @@ defmodule EctoCastToString.Number do
   def type, do: :string
 
   @moduledoc """
-  This module casts an float into string, to be later saved by `Ecto`.
+  This module casts a number into string, to be later saved by `Ecto`.
   """
 
   @doc """
@@ -30,7 +30,7 @@ defmodule EctoCastToString.Number do
   ## Usage
       defmodule MyModel do
         schema "my_model" do
-          field :a_string, EctoCastToString.Number
+          field :number_string, EctoCastToString.Number
 
           timestamps()
         end

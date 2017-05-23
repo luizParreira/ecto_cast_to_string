@@ -24,7 +24,7 @@ Simply set the type of the column you would like to have casted to string.
 defmodule MyModel
   schema "my_model" do
     # Integer
-    field :integer_string, EctoCastToString.Number
+    field :number_string, EctoCastToString.Number
 
     timestamps()
   end
