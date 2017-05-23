@@ -2,7 +2,7 @@ defmodule EctoCastToString.Mixfile do
   use Mix.Project
 
   @description "EctoCastToString is a simple library that enables ecto casting from int/float to string."
-  @version "0.1.0"
+  @version "0.1.1"
 
   def project do
     [app: :ecto_cast_to_string,
