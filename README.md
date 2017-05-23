@@ -1,6 +1,6 @@
 # EctoCastToString
 
-EctoCastIntToString is a simple library that enables ecto casting from integer to string.
+EctoCastIntToString is a simple library that enables ecto casting from number to string.
 
 ## Installation
 
@@ -24,10 +24,7 @@ Simply set the type of the column you would like to have casted to string.
 defmodule MyModel
   schema "my_model" do
     # Integer
-    field :integer_string, EctoCastToString.Integer
-
-    # Float
-    field :float_string, EctoCastToString.Float
+    field :integer_string, EctoCastToString.Number
 
     timestamps()
   end
