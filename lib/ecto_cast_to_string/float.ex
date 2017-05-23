@@ -27,7 +27,7 @@ defmodule EctoCastToString.Float do
   ## Usage
       defmodule MyModel do
         schema "my_model" do
-          field :a_string, EctoCastToString.Float.Float
+          field :a_string, EctoCastToString.Float
 
           timestamps()
         end
