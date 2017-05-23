@@ -1,11 +1,10 @@
 # EctoCastToString
 
-**TODO: Add description**
+EctoCastIntToString is a simple library that enables ecto casting from integer to string.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ecto_cast_to_string` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `:ecto_cast_to_string` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -13,7 +12,28 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ecto_cast_to_string](https://hexdocs.pm/ecto_cast_to_string).
+## Dependencies
 
+As expected, `EctoCastToString` depends upon `Ecto` to work.
+
+## Usage
+
+Simply set the type of the column you would like to have casted to string.
+
+```elixir
+defmodule MyModel
+  schema "my_model" do
+    # Integer
+    field :integer_string, EctoCastToString.Integer
+
+    # Float
+    field :float_string, EctoCastToString.Float
+
+    timestamps()
+  end
+end
+```
+
+## License
+
+EctoCastint is under MIT license. Check the `LICENSE` file for more details.
