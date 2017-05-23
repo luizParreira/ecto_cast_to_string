@@ -28,7 +28,7 @@ defmodule EctoCastToString.NumberTest do
 
   describe "dump/1" do
     test "an integer" do
-      assert {:ok, "1"} == EctoCastToString.Number.dump(1)
+      assert :error == EctoCastToString.Number.dump(1)
     end
 
     test "a string" do
@@ -36,7 +36,7 @@ defmodule EctoCastToString.NumberTest do
     end
 
     test "a float" do
-      assert {:ok, "1.234"} == EctoCastToString.Number.dump(1.234)
+      assert :error == EctoCastToString.Number.dump(1.234)
     end
 
     test "an atom" do
